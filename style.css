@@ -1,21 +1,116 @@
+/* Reset básico para remover margens e paddings padrão */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    background-color: #333; /* Cor de fundo do header */
-    padding: 10px 20px; /* Espaçamento interno */
-    position: fixed; /* Fixar o header no topo */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do Header */
+header {
+  background-color: #333; /* Cor de fundo do header */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: fixed; /* Fixar o header no topo */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Alinha verticalmente */
+}
+
+/* Logo (ORRA STUDIO) */
+.orraeicone {
+  display: flex;
+  align-items: center;
+}
+
+.sobeorra {
+  font-size: 24px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px); /* Posiciona o logo 50px abaixo inicialmente */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.sobeorra.show {
+  transform: translateY(0); /* Move o logo para a posição original */
+  opacity: 1;
+}
+
+/* Opções de Navegação */
+.nav-opcoes {
+  display: flex;
+  flex-direction: row; /* Garante que as opções estejam em linha */
+}
+
+.nav-opcoes ul.nav-links {
+  list-style: none;
+  display: flex; /* Exibe os itens em linha */
+}
+
+.nav-opcoes ul.nav-links li.nav-option {
+  margin: 0 15px; /* Espaçamento entre as opções */
+  opacity: 0;
+  transform: translateY(50px); /* Posiciona as opções 50px abaixo inicialmente */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.nav-opcoes ul.nav-links li.nav-option.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-opcoes ul.nav-links li.nav-option a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-opcoes ul.nav-links li.nav-option a:hover {
+  color: #ff9800; /* Cor ao passar o mouse */
+}
+
+/* Localização */
+.nav-localizacao {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px); /* Posiciona a localização 50px abaixo inicialmente */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.nav-localizacao.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-localizacao:hover {
+  color: #ff9800; /* Cor ao passar o mouse */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Mantém o layout em linha mesmo em telas menores */
+  .navbar {
+      flex-direction: row;
+      align-items: center;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* Espaço entre os itens */
-    align-items: center; /* Alinha verticalmente */
+  .nav-opcoes ul.nav-links {
+      flex-direction: row; /* Mantém as opções em linha */
   }
+
+  .nav-opcoes ul.nav-links li.nav-option {
+      margin: 0 10px; /* Ajusta o espaçamento entre as opções */
+  }
+
+  .nav-localizacao {
+      margin-left: 20px; /* Adiciona espaçamento à esquerda da localização */
+  }
+}
