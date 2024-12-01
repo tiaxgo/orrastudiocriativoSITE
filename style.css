@@ -72,7 +72,7 @@ header {
 }
 
 .nav-opcoes ul.nav-links li.nav-option a:hover {
-  color: #ff9800; /* Cor ao passar o mouse */
+  color: #978a77; /* Cor ao passar o mouse */
 }
 
 /* Localização */
@@ -91,7 +91,7 @@ header {
 }
 
 .nav-localizacao:hover {
-  color: #ff9800; /* Cor ao passar o mouse */
+  color: #6170af; /* Cor ao passar o mouse */
 }
 
 /* Responsividade para dispositivos móveis */
