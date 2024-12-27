@@ -47,3 +47,21 @@ window.addEventListener('DOMContentLoaded', () => {
   
     slideElements.forEach(el => observer.observe(el));
   });
+
+  let flipped = false;
+
+  function toggleButton() {
+    const front = document.querySelector('.btn-front');
+    const back = document.querySelector('.btn-back');
+  
+    if (flipped) {
+      front.style.transform = 'translateY(0%)';
+      back.style.transform = 'translateY(100%)';
+    } else {
+      front.style.transform = 'translateY(-100%)';
+      back.style.transform = 'translateY(0%)';
+    }
+  
+    flipped = !flipped;
+  }
+  
