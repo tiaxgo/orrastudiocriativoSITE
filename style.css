@@ -338,7 +338,7 @@ header {
 } */
 
 /* Overlay Simples (Sem Frase) */
-.overlay {
+.overlay2 {
   position: absolute;
   top: 0;   
   left: 0;  
@@ -351,7 +351,7 @@ header {
 }
 
 /* Exibir Overlay ao Passar o Mouse */
-.img-max-container:hover .overlay {
+.img-max-container:hover .overlay2 {
   opacity: 1; /* Torna o overlay visível no hover */
 }
 
