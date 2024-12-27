@@ -94,6 +94,94 @@ header {
   color: #6170af; /* Cor ao passar o mouse */
 }
 
+.paragrafo-animado {
+  width: 100%;
+  max-width: 400px;
+}
+
+.home-banner {
+  background-color: blue;
+  padding-top: 100px;
+  height: 700px;
+}
+
+.home-banner h2 {
+  width: 100%;
+  font-size: 100px;
+}
+.home-banner p {
+  width: 100%;
+  font-size: 40px;
+}
+
+.botao p {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 25px;
+  font-size: 20px;
+
+
+}
+
+.botao p:hover {
+  background-color: rgb(194, 186, 186);
+  color: black;
+}
+
+.alinhar-botoes {
+  width: 200px;
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.trabalhos-anteriores {
+  background-color: red;
+  height: 950px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+
+  
+}
+
+.frase-trabalhos-anteriores {
+  text-align: start;
+  padding-bottom: 20px;
+  width: 100%;
+
+
+}
+.apresentacao-trabalhos-mini {
+  width: 100%;
+}
+
+.apresentacao-trabalhos-mini-img {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    grid-gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 1200px; /* Limita a largura da galeria */
+    margin: 0 auto; /* Centraliza a galeria */
+}
+
+
+
+.img-mini {
+  width: 100%;
+  height: 400px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
+  border-radius: 8px; /* Bordas arredondadas (opcional) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   /* Mantém o layout em linha mesmo em telas menores */
@@ -113,4 +201,43 @@ header {
   .nav-localizacao {
       margin-left: 20px; /* Adiciona espaçamento à esquerda da localização */
   }
+
+  .home-banner {
+    height: 920px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .alinhar-botoes {
+    width: 200px;
+  }
+
+  .botoes {
+    width: 100%;
+  }
+
+  .apresentacao-trabalhos-mini-img {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+}
+
+.img-mini {
+    height: 160px;
+}
+.trabalhos-anteriores {
+  background-color: red;
+  height: 1150px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+
+  
+}
+
+.frase-trabalhos-anteriores h3 {
+  text-align: start;
+
+
+}
+
 }
