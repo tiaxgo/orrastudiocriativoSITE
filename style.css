@@ -5,14 +5,21 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1200px;    /* Define a largura máxima */
+  margin: 0 auto;       /* Centraliza horizontalmente */
+  /* Outras propriedades, se necessário */
+}
+
 /* Estilização do Header */
 header {
   background-color: #333; /* Cor de fundo do header */
   padding: 10px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
   width: 100%;
-  top: 0;
-  left: 0;
+  max-width: 1200px; 
+  margin: 0 auto; 
+
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
 }
 
@@ -143,7 +150,7 @@ header {
 
 .trabalhos-anteriores {
   background-color: red;
-  height: 950px;
+  height: 780px;
   width: 100%;
   padding: 40px 20px;
   text-align: center;
@@ -163,7 +170,7 @@ header {
 }
 
 .apresentacao-trabalhos-mini-img {
-  display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
     grid-gap: 20px; /* Espaçamento entre as imagens */
     max-width: 1200px; /* Limita a largura da galeria */
@@ -178,21 +185,27 @@ header {
   object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
   border-radius: 8px; /* Bordas arredondadas (opcional) */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
 }
 
 .img-max {
-  width: 100%;
+  width: 1200px;
   height: 600px;
   border-radius: 25px;
+  display: block;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
 
 }
 
 .apresentacao-trabalhos-maximo {
+  display: flex;
   padding: 20px;
+
+  justify-content: center;
 }
 .frase-trabalhos-anteriores h3{
   width: 100%;
-  padding: 30px 0 0 30px;
+
 
 }
 
@@ -201,10 +214,11 @@ header {
   overflow: hidden; /* Oculta partes da imagem que excedem o contêiner */
   cursor: pointer; /* Indica que o item é interativo */
 }
-.gallery-item:hover .img-mini {
-  transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
+/*.gallery-item:hover .img-mini {
+  transform: scale(1.1);  Zoom na imagem ao passar o mouse 
 }
-
+  AQUI PARA ADCIONAR O EFEITO ZOOM
+*/
 .overlay {
   position: absolute;
   top: 0;
@@ -218,6 +232,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  border-radius: 10px;
+  
 }
 
 /* Torna o overlay visível ao passar o mouse */
@@ -227,11 +243,12 @@ header {
 
 .overlay .text {
   color: #fff;
-  text-align: center;
+  text-align: end;
   transform: translateY(20px); /* Posiciona as frases abaixo inicialmente */
   opacity: 0; /* Invisível inicialmente */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 
 .gallery-item:hover .overlay .text {
   transform: translateY(0); /* Move as frases para a posição original */
@@ -244,6 +261,38 @@ header {
   line-height: 1.4;
 }
 
+/* Estilização das Frases no Overlay */
+.overlay .frase-esquerda,
+.overlay .frase-direita {
+    position: absolute;
+    bottom: 20px; /* Espaço do fundo */
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0; /* Invisível inicialmente */
+    transform: translateY(30px); /* Posiciona as frases 20px abaixo */
+    transition: transform 0.7s ease, opacity 0.1s ease;
+}
+
+/* Exibindo as Frases ao Passar o Mouse */
+.gallery-item:hover .overlay .frase-esquerda,
+.gallery-item:hover .overlay .frase-direita {
+    opacity: 1; /* Torna as frases visíveis */
+    transform: translateY(0); /* Move as frases para a posição original */
+}
+
+/* Posicionando a frase à esquerda */
+.overlay .frase-esquerda {
+    left: 20px; /* Espaço da esquerda */
+    text-align: left;
+}
+
+/* Posicionando a frase à direita */
+.overlay .frase-direita {
+    right: 20px; /* Espaço da direita */
+    text-align: right;
+}
+
 .apresentacao-trabalhos-abaixo {
   display: flex;
   flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
@@ -252,9 +301,12 @@ header {
 .apresentacao-trabalhos-abaixo > div {
   width: 50%; /* Cada div ocupa 50% da largura da div pai */
   box-sizing: border-box;
-  padding: 30px ;
+  padding: 0 30px 30px 30px ;
 }
 
+.titulo-frase-2 {
+  padding-bottom: 20px;
+}
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
@@ -300,13 +352,13 @@ header {
 }
 
 .img-max {
-  width: 100px;
+  width: 100%;
   height: 400px;
 }
 
 .trabalhos-anteriores {
   background-color: red;
-  height: 3200px;
+  height: 2600px;
   width: 100%;
   padding: 40px 20px;
   text-align: center;
@@ -316,8 +368,11 @@ header {
 
 .frase-trabalhos-anteriores h3 {
   text-align: start;
+  padding-left: 20px;
+}
 
-
+.titulo-frase-2 {
+  padding-bottom: 10px;
 }
 
 }
