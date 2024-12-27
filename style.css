@@ -8,18 +8,18 @@
 body {
   max-width: 1200px;    /* Define a largura máxima */
   margin: 0 auto;       /* Centraliza horizontalmente */
-  /* Outras propriedades, se necessário */
+  background-color: antiquewhite;/* Outras propriedades, se necessário */
 }
 
 /* Estilização do Header */
 header {
-  background-color: #333; /* Cor de fundo do header */
+  background-color:transparent; /* Cor de fundo do header */
   padding: 10px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
   width: 100%;
   max-width: 1200px; 
   margin: 0 auto; 
-
+  
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
 }
 
@@ -37,7 +37,7 @@ header {
 
 .sobeorra {
   font-size: 24px;
-  color: #fff;
+  color: black;
   opacity: 0;
   transform: translateY(50px); /* Posiciona o logo 50px abaixo inicialmente */
   transition: transform 1s ease-out, opacity 1s ease-out;
@@ -52,6 +52,7 @@ header {
 .nav-opcoes {
   display: flex;
   flex-direction: row; /* Garante que as opções estejam em linha */
+  color: black;
 }
 
 .nav-opcoes ul.nav-links {
@@ -72,7 +73,7 @@ header {
 }
 
 .nav-opcoes ul.nav-links li.nav-option a {
-  color: #fff;
+  color: black; /* Cor da fonte NAV */
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease;
@@ -84,7 +85,7 @@ header {
 
 /* Localização */
 .nav-localizacao {
-  color: #fff;
+  color: black;
   font-size: 18px;
   cursor: pointer;
   opacity: 0;
@@ -107,7 +108,6 @@ header {
 }
 
 .home-banner {
-  background-color: blue;
   padding-top: 100px;
   height: 700px;
 }
@@ -149,7 +149,7 @@ header {
 }
 
 .trabalhos-anteriores {
-  background-color: red;
+
   height: 780px;
   width: 100%;
   padding: 40px 20px;
@@ -161,10 +161,14 @@ header {
 .frase-trabalhos-anteriores {
   text-align: start;
   width: 100%;
-  padding-left: 20px;
-
 
 }
+
+.frase-trabalhos-destacados {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
 .apresentacao-trabalhos-mini {
   width: 100%;
 }
@@ -205,6 +209,7 @@ header {
 }
 .frase-trabalhos-anteriores h3{
   width: 100%;
+  padding-bottom: 30px;
 
 
 }
@@ -414,7 +419,7 @@ header {
 
 .frase-trabalhos-anteriores h3 {
   text-align: start;
-  padding-left: 20px;
+
 }
 
 .titulo-frase-2 {
