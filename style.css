@@ -160,8 +160,8 @@ header {
 
 .frase-trabalhos-anteriores {
   text-align: start;
-  padding-bottom: 20px;
   width: 100%;
+  padding-left: 20px;
 
 
 }
@@ -307,6 +307,52 @@ header {
 .titulo-frase-2 {
   padding-bottom: 20px;
 }
+
+/* ABAIXO SEGUNDO OVERLAY*/
+
+/* Contêiner que engloba a imagem e o overlay */
+.img-max-container {
+  position: relative;    /* Permite posicionar o overlay sobre a imagem */
+  width: 100%;           /* Ajuste conforme seu layout */
+  /*max-width: 800px;       Limita a largura se quiser */
+  margin: 0 auto;        /* Centraliza se quiser */
+  overflow: hidden;      /* Garante que nada “vaze” */
+}
+
+/* A Imagem */
+.img-max {
+  width: 100%;
+  height: 700px;          /* Mantém a proporção original, se quiser outro estilo, defina altura fixa */
+  display: block;
+  border-radius: 8px;    /* Bordas arredondadas, opcional */
+  transition: transform 0.3s ease; /* Efeito de zoom no hover */
+}
+
+/*.img-max-container:hover .img-max {
+  transform: scale(1.05);  Zoom leve na imagem ao passar o mouse 
+} */
+
+/* Overlay Simples (Sem Frase) */
+.overlay {
+  position: absolute;
+  top: 0;   
+  left: 0;  
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 244, 244, 0.219); /* Camada semi-transparente */
+  opacity: 0;                     /* Invisível inicialmente */
+  transition: opacity 0.3s ease;  /* Animação de aparição */
+  border-radius: 8px;             /* Mesmo raio da imagem para acompanhar as bordas */
+}
+
+/* Exibir Overlay ao Passar o Mouse */
+.img-max-container:hover .overlay {
+  opacity: 1; /* Torna o overlay visível no hover */
+}
+
+
+
+
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
