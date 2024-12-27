@@ -450,6 +450,105 @@ hr {
 }
 
 
+/* SEÇÃO PRINCIPAL */
+.secao-apresentacao {
+
+}
+
+.texto-apresentacao {
+  width: 500px;
+  text-align: start;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.titulo-apresentacao {
+  width: 500px;
+  text-align: justify;
+}
+
+
+.apresentacao-perfil {
+  display: flex;               /* Organiza a imagem e o texto lado a lado */
+  gap: 20px;                   /* Espaço horizontal entre conteiner-perfil e apresentacao-info */
+  align-items: flex-start;     /* Alinha no topo (pode usar center se preferir) */
+  padding: 20px;               /* Espaçamento interno da seção */
+  width: 500px;         /* Largura fixa da div pai */
+  margin: 0 auto;       /* Centraliza horizontalmente */
+        /* Coloca os filhos lado a lado */
+  /* Opcional: espaçamento entre filhos */
+  /* gap: 10px; */
+  box-sizing: border-box;
+}
+
+/* CONTEINER QUE CONTÉM IMAGEM E LINKS */
+.conteiner-perfil {
+  display: flex;
+  flex-direction: column;      /* Imagem e textos ficam em coluna */
+  align-items: center;         /* Centraliza horizontalmente (opcional) */
+  width: 200px;                /* Largura fixa ou ajustável do contêiner (ajuste se quiser) */
+  gap: 10px;                   /* Espaço vertical entre a imagem e os <p> */
+  text-align: center;          /* Centraliza texto (opcional) */
+}
+
+/* IMAGEM PEQUENA MAS RESPONSIVA */
+.img-perfil {
+  width: 100%;                 /* O div .img-perfil ocupa toda a largura do contêiner */
+  max-width: 120px;            /* Ajuste: limite máximo que quiser para a imagem */
+  overflow: hidden;            /* Garante que nada "vaze" se for maior */
+  border-radius: 50%;          /* Exemplo: se quiser em formato circular (remova se não quiser) */
+}
+
+/* FAZ A IMAGEM SE AJUSTAR AO TAMANHO DO CONTAINER */
+.img-perfil img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;          /* Se quiser manter formato circular */
+}
+
+/* TEXTOS DO CONTAINER-PERFIL */
+.conteiner-perfil p {
+  font-size: 14px;             /* Tamanho de fonte (ajuste se quiser maior/menor) */
+  color: #333;
+}
+
+/* BLOCO DE INFORMAÇÃO */
+.apresentacao-info {
+  flex: 1;                     /* Ocupa o resto do espaço horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* Alinha verticalmente, se preferir */
+  gap: 10px;                   /* Espaço vertical interno */
+}
+
+.apresentacao-info h3 {
+  font-size: 20px;
+  color: #111;
+}
+
+.apresentacao-info p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Cada div filha ocupa 50% */
+.apresentacao-perfil .conteiner-perfil,
+.apresentacao-perfil .apresentacao-info {
+  width: 50%;         /* 50% da largura do pai */
+  box-sizing: border-box; /* Garante que padding seja incluso */
+  /* Caso queira padding interno em cada div */
+  padding: 20px;
+}
+
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
