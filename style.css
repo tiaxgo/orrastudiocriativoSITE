@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 1200px;    /* Define a largura máxima */
+  max-width: 1400px;    /* Define a largura máxima */
   margin: 0 auto;       /* Centraliza horizontalmente */
   background-color: antiquewhite;/* Outras propriedades, se necessário */
 }
@@ -17,7 +17,7 @@ header {
   padding: 10px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1400px; 
   margin: 0 auto; 
   
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
@@ -108,7 +108,7 @@ header {
 }
 
 .home-banner {
-  padding-top: 100px;
+  padding-top: 100px 20px 20px 20px;
   height: 700px;
 }
 
@@ -177,7 +177,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
     grid-gap: 20px; /* Espaçamento entre as imagens */
-    max-width: 1200px; /* Limita a largura da galeria */
+    max-width: 1400px; /* Limita a largura da galeria */
     margin: 0 auto; /* Centraliza a galeria */
 }
 
@@ -356,6 +356,45 @@ header {
 }
 
 
+
+.linha {
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: black; /* Cor da linha */
+  width: 100%;
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+
+
+.slide-up {
+  opacity: 0; /* estado inicial invisível */
+  /* Podemos deixar sem transform aqui; pois a keyframe inicial define transform: translateY(50px) */
+}
+
+.slide-up.animate {
+  animation: slideUp 1.2s ease-out forwards;
+  animation-delay:0.5s; /* 300ms de espera antes de animar */
+}
+
+/* Keyframes do vir debaixo */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 

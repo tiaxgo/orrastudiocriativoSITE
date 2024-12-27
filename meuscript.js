@@ -29,3 +29,21 @@ window.addEventListener('DOMContentLoaded', () => {
     // Inicia a animação da localização após todas as opções terem animado
     animateElement(navLocalizacao, 100 + navOptions.length * 100 + 100);
 });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const slideElements = document.querySelectorAll('.slide-up');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target); // anima só uma vez
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    slideElements.forEach(el => observer.observe(el));
+  });
