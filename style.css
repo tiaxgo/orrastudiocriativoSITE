@@ -356,13 +356,28 @@ header {
   opacity: 1; /* Torna o overlay visível no hover */
 }
 
+.linha-services {
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
 
+.linha-services hr {
+  border: 0;
+  height: 1px;
+  background-color: black; /* Cor da linha */
+  width: 100%;
+  margin: 0px auto; /* Centraliza horizontalmente */
+}
 
 .linha {
   background-color: transparent;
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  
 }
 
 hr {
@@ -448,6 +463,95 @@ hr {
   transform: translateY(0%);
 
 }
+/* seção SERVICOS*/
+
+.infos-services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.texto-services {
+  width: 500px;
+  text-align: start;
+}
+
+.titulo-services {
+  width: 100%;
+  text-align: justify;
+}
+
+.apresentacao-services{
+  display: flex;               /* Organiza a imagem e o texto lado a lado */
+  gap: 20px;                   /* Espaço horizontal entre conteiner-perfil e apresentacao-info */
+  align-items: flex-start;     /* Alinha no topo (pode usar center se preferir) */
+  padding: 20px;               /* Espaçamento interno da seção */
+  width: 1100px;         /* Largura fixa da div pai */
+  margin: 0 auto;       /* Centraliza horizontalmente */
+        /* Coloca os filhos lado a lado */
+  /* Opcional: espaçamento entre filhos */
+  /* gap: 10px; */
+  box-sizing: border-box;
+}
+
+.conteiner-perfil-services {
+  display: flex;
+  flex-direction: column;      /* Imagem e textos ficam em coluna */
+  align-items: center;         /* Centraliza horizontalmente (opcional) */
+  width: 100%;                /* Largura fixa ou ajustável do contêiner (ajuste se quiser) */
+  gap: 10px;                   /* Espaço vertical entre a imagem e os <p> */
+  text-align: center;          /* Centraliza texto (opcional) */
+}
+
+.img-perfil-services {
+  width: 100%;                 /* O div .img-perfil ocupa toda a largura do contêiner */
+  max-width: 120px;            /* Ajuste: limite máximo que quiser para a imagem */
+  overflow: hidden;            /* Garante que nada "vaze" se for maior */
+  border-radius: 50%;          /* Exemplo: se quiser em formato circular (remova se não quiser) */
+}
+
+.img-perfil-services img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;          /* Se quiser manter formato circular */
+} 
+
+.conteiner-perfil-services p {
+  font-size: 14px;             /* Tamanho de fonte (ajuste se quiser maior/menor) */
+  color: #333;
+} 
+
+.apresentacao-info-services {
+  flex: 1;                     /* Ocupa o resto do espaço horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* Alinha verticalmente, se preferir */
+  gap: 10px;                   /* Espaço vertical interno */
+}
+
+.apresentacao-info-services h3 {
+  font-size: 20px;
+  color: #111;
+}
+
+.apresentacao-info-services p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.apresentacao-perfil-services .conteiner-perfil-services,
+.apresentacao-perfil-services .apresentacao-info-services {
+  width: 50%;         /* 50% da largura do pai */
+  box-sizing: border-box; /* Garante que padding seja incluso */
+  padding: 20px;
+}
+
 
 
 /* SEÇÃO PRINCIPAL */
