@@ -40,22 +40,44 @@
             
 
         </section>
-         <!-- Seção do formulário -->
+        <!-- Seção do formulário -->
     <section class="form-section slide-up" style="padding: 100px 20px 20px 20px;">
         <h2>Entre em Contato</h2>
-        <!-- modify this form HTML and place wherever you want your form -->
-<form action="https://formspree.io/f/xovvzoqn" method="POST">
-    <label>
-        Your email:
-        <input type="email" name="email">
-    </label>
-    <label>
-        Your message:
-         <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
+        <form id="contactForm" method="POST">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="service">Serviço de Interesse:</label>
+                <select id="service" name="service">
+                    <option value="design">Design</option>
+                    <option value="development">Desenvolvimento</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferências de Contato:</label>
+                <label><input type="checkbox" name="contact_preference" value="email"> Email</label>
+                <label><input type="checkbox" name="contact_preference" value="phone"> Telefone</label>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
+        <div id="formMessage" style="display:none; margin-top: 20px;"></div>
     </section>
         
         <div class="linha slide-up">
@@ -139,5 +161,37 @@
         </section>
 
     </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+        
+            var form = event.target;
+            var formData = new FormData(form);
+        
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://formspree.io/f/xovvzoqn', true);
+            xhr.setRequestHeader('Accept', 'application/json');
+        
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    var formMessage = document.getElementById('formMessage');
+                    if (xhr.status === 200) {
+                        formMessage.style.display = 'block';
+                        formMessage.style.color = 'green';
+                        formMessage.innerText = 'Mensagem enviada com sucesso!';
+                        form.reset(); // Limpa o formulário
+                    } else {
+                        formMessage.style.display = 'block';
+                        formMessage.style.color = 'red';
+                        formMessage.innerText = 'Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.';
+                    }
+                }
+            };
+        
+            xhr.send(formData);
+        });
+        </script>
 </body>
+
+
 </html>
