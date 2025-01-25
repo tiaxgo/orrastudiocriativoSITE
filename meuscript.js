@@ -67,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
   
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -78,10 +79,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 =======
+=======
+>>>>>>> Stashed changes
   /* PARA REDIRECINAMENTO DE PAGINA */
 
   function toggleButton(url) {
     // Redireciona para a URL fornecida
     window.location.href = url;
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
