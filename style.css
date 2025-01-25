@@ -1,4 +1,8 @@
 /* Reset básico para remover margens e paddings padrão */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200;1,200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +18,7 @@ body {
   max-width: 1600px;    /* Define a largura máxima */
   background-color: antiquewhite;/* Outras propriedades, se necessário */
   justify-content: center;
+  font-family: "Inter", serif;;
 }
 
 body.body-projetos {
@@ -23,7 +28,6 @@ body.body-projetos {
 
 main {
   width: 100vw; /* Ocupa 100% da largura da janela */
-  text-align: center; /* Alinha o conteúdo */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -37,7 +41,7 @@ main {
 /* Estilização do Header */
 header {
   background-color:transparent; /* Cor de fundo do header */
-  padding: 10px 20px; /* Espaçamento interno */
+  padding: 25px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
   margin: 0 auto; 
   width: 100vw; /* Ocupa 100% da largura da janela */
@@ -51,6 +55,11 @@ footer {
   text-align: center; /* Alinha o conteúdo */
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
 
+}
+
+.boas-vindas {
+  height: 700px;
+  width: 1000px;
 }
 
 .text-color {
@@ -68,7 +77,11 @@ footer {
   justify-content: space-between; /* Espaço entre os itens */
   align-items: center; /* Alinha verticalmente */
   max-width: 1400px;
+  height: 35px;
   margin: 0 auto;
+  font-weight: 700;
+  
+
 }
 
 /* Logo (ORRA STUDIO) */
@@ -78,7 +91,7 @@ footer {
 }
 
 .sobeorra {
-  font-size: 24px;
+  font-size: 23px;
   color: black;
   opacity: 0;
   transform: translateY(50px); /* Posiciona o logo 50px abaixo inicialmente */
@@ -117,7 +130,7 @@ footer {
 .nav-opcoes ul.nav-links li.nav-option a {
   color: black; /* Cor da fonte NAV */
   text-decoration: none;
-  font-size: 18px;
+  font-size: 21px;
   transition: color 0.3s ease;
 }
 
@@ -128,7 +141,7 @@ footer {
 /* Localização */
 .nav-localizacao {
   color: black;
-  font-size: 18px;
+  font-size: 21px;
   cursor: pointer;
   opacity: 0;
   transform: translateY(50px); /* Posiciona a localização 50px abaixo inicialmente */
@@ -145,15 +158,18 @@ footer {
 }
 
 .paragrafo-animado {
-  width: 100%;
-  max-width: 400px;
+  color: #6c6868;
+  max-width: 1400px;
+
 }
 
 .home-banner {
   padding-top: 100px 20px 20px 20px;
   height: 700px;
-  max-width: 1400px;
-  margin: auto;
+  width: 1441px;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
 }
 
 .home-banner.contato-projetos {
@@ -208,10 +224,14 @@ footer {
 .home-banner h2 {
   width: 100%;
   font-size: 100px;
+  font-weight: 300;
+  height: 250px;
+
 }
 .home-banner p {
-  width: 100%;
+  width: 900px;
   font-size: 40px;
+  height: 150px;
 }
 
 .botao p {
@@ -237,7 +257,6 @@ footer {
 .alinhar-botoes {
   width: 400px;
   display: flex;
-  padding-top: 20px;
   gap: 20px;
 
 }
@@ -571,8 +590,32 @@ hr {
   height: 50px;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 27px;
+  border: 1px solid black;
+
+}
+
+.button-projetos {
+  position: relative;
+  width: 119px;
+  height: 42px;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 25px;
 }
+
+
+.button-forms {
+  position: relative;
+  width: 220px;
+  height: 42px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+
+
 
 .btn {
   position: absolute;
@@ -581,8 +624,9 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease-in-out;
-  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Botão da frente (preto) */
@@ -592,6 +636,12 @@ hr {
   transform: translateY(0%);
   z-index: 2;
 }
+
+.btn-front.button-forms {
+  background-color: white;
+  color: black;
+}
+
 
 /* Botão de trás (branco) */
 .btn-back {
@@ -603,9 +653,27 @@ hr {
   border-radius: 25px;
 }
 
+.btn-back {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  transform: translateY(100%);
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.button-container.button-forms {
+  background-color: white; /* aqui a cor por traz do botao branco*/
+}
+
+
+
+
+
 .button-container {
   background-color: black; /* aqui a cor por traz do botao branco*/
 }
+
 
 /* Efeito hover */
 .button-container:hover .btn-front {
