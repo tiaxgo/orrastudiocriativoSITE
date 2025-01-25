@@ -66,6 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   
 
+<<<<<<< Updated upstream
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -83,3 +84,11 @@ function redirectTo(url) {
   // Redireciona para a URL fornecida
   window.location.href = url;
 }
+=======
+  /* PARA REDIRECINAMENTO DE PAGINA */
+
+  function toggleButton(url) {
+    // Redireciona para a URL fornecida
+    window.location.href = url;
+}
+>>>>>>> Stashed changes
