@@ -60,12 +60,15 @@ footer {
 .bg-color-black {
   background-color: #111;
   padding-top: 70px;
+
 }
 
 .navbar {
   display: flex;
   justify-content: space-between; /* Espaço entre os itens */
   align-items: center; /* Alinha verticalmente */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Logo (ORRA STUDIO) */
@@ -618,11 +621,11 @@ hr {
 .infos-services {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 1100px;
-  margin: 0 auto;
-  align-items: center;
+  text-align: start;
+  width: 100%;
   padding: 20px;
+  margin: auto;
+  max-width: 1400px;
 }
 
 .texto-services {
@@ -631,7 +634,11 @@ hr {
 }
 
 .titulo-services {
-  width: 100%;
+  width: 50%;
+  text-align: justify;
+}
+
+.texto-justificado {
   text-align: justify;
 }
 
@@ -640,7 +647,7 @@ hr {
   gap: 20px;                   /* Espaço horizontal entre conteiner-perfil e apresentacao-info */
   align-items: flex-start;     /* Alinha no topo (pode usar center se preferir) */
   padding: 20px;               /* Espaçamento interno da seção */
-  width: 1100px;         /* Largura fixa da div pai */
+  max-width: 1400px;         /* Largura fixa da div pai */
   margin: 0 auto;       /* Centraliza horizontalmente */
         /* Coloca os filhos lado a lado */
   /* Opcional: espaçamento entre filhos */
@@ -673,7 +680,7 @@ hr {
 
 .conteiner-perfil-services p {
   font-size: 14px;             /* Tamanho de fonte (ajuste se quiser maior/menor) */
-  color: #333;
+  color: black;
 } 
 
 .apresentacao-info-services {
@@ -691,7 +698,7 @@ hr {
 
 .apresentacao-info-services p {
   font-size: 14px;
-  color: #444;
+  color: white;
   line-height: 1.5;
 }
 
@@ -740,11 +747,10 @@ hr {
   flex-direction: column;
   text-align: start;
   width: 100%;
-
   padding: 20px;
   margin: auto;
   max-width: 1400px;
-
+  
 }
 
 .titulo-apresentacao {
@@ -757,8 +763,7 @@ hr {
   display: flex;               /* Organiza a imagem e o texto lado a lado */
   gap: 20px;                   /* Espaço horizontal entre conteiner-perfil e apresentacao-info */
   align-items: flex-start;     /* Alinha no topo (pode usar center se preferir) */
-  padding: 20px;               /* Espaçamento interno da seção */
-  width: 500px;         /* Largura fixa da div pai */
+  max-width: 1400px;         /* Largura fixa da div pai */
   margin: 0 auto;       /* Centraliza horizontalmente */
         /* Coloca os filhos lado a lado */
   /* Opcional: espaçamento entre filhos */
@@ -779,8 +784,8 @@ hr {
 /* IMAGEM PEQUENA MAS RESPONSIVA */
 .img-perfil {
   width: 100%;                 /* O div .img-perfil ocupa toda a largura do contêiner */
-  max-width: 120px;            /* Ajuste: limite máximo que quiser para a imagem */
-  overflow: hidden;            /* Garante que nada "vaze" se for maior */
+  max-width: 250px;            /* Ajuste: limite máximo que quiser para a imagem */
+         /* Garante que nada "vaze" se for maior */
   border-radius: 50%;          /* Exemplo: se quiser em formato circular (remova se não quiser) */
 }
 
@@ -789,13 +794,13 @@ hr {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 50%;          /* Se quiser manter formato circular */
+       /* Se quiser manter formato circular */
 }
 
 /* TEXTOS DO CONTAINER-PERFIL */
 .conteiner-perfil p {
   font-size: 14px;             /* Tamanho de fonte (ajuste se quiser maior/menor) */
-  color: #333;
+  color: white;
 }
 
 /* BLOCO DE INFORMAÇÃO */
@@ -809,12 +814,10 @@ hr {
 
 .apresentacao-info h3 {
   font-size: 20px;
-  color: #111;
 }
 
 .apresentacao-info p {
   font-size: 14px;
-  color: #444;
   line-height: 1.5;
 }
 
@@ -825,6 +828,8 @@ hr {
   box-sizing: border-box; /* Garante que padding seja incluso */
   /* Caso queira padding interno em cada div */
   padding: 20px;
+  align-items: start;
+  text-align: justify;
 }
 /*area planos */
 .full-background {
