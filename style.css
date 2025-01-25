@@ -58,7 +58,6 @@ footer {
 }
 
 .boas-vindas {
-  height: 700px;
   width: 1000px;
 }
 
@@ -351,7 +350,9 @@ footer {
 .frase-trabalhos-anteriores h3{
   width: 100%;
   padding-bottom: 30px;
-
+  font-size: 28px;
+  font-weight: 400;
+  color: #212020;
 
 }
 
@@ -547,7 +548,7 @@ footer {
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1400px;
+  max-width: 1441px;
   margin: auto;
   
 }
@@ -560,6 +561,15 @@ hr {
   margin: 20px auto; /* Centraliza horizontalmente */
 }
 
+.linha-bemvindo {
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1441px;
+  margin: auto;
+  width: 100%;
+}
 
 
 .slide-up {
