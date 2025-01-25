@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  min-width: 1600px;    /* Define a largura máxima */
-  margin: 0 auto;       /* Centraliza horizontalmente */
+  max-width: 1600px;    /* Define a largura máxima */
   background-color: antiquewhite;/* Outras propriedades, se necessário */
+  justify-content: center;
 }
 
 body.body-projetos {
@@ -16,8 +21,16 @@ body.body-projetos {
   height: 2000px;
 }
 
+main {
+  width: 100vw; /* Ocupa 100% da largura da janela */
+  text-align: center; /* Alinha o conteúdo */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-projetos {
-  height: 2000px;
+  height: 3100px;
   grid-column: auto;
 }
 
@@ -26,11 +39,18 @@ header {
   background-color:transparent; /* Cor de fundo do header */
   padding: 10px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
-  width: 100%;
-  max-width: 1400px; 
   margin: 0 auto; 
-  
+  width: 100vw; /* Ocupa 100% da largura da janela */
+  text-align: center; /* Alinha o conteúdo */
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+}
+
+footer {
+  margin: 0 auto; 
+  width: 100vw; /* Ocupa 100% da largura da janela */
+  text-align: center; /* Alinha o conteúdo */
+  z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+
 }
 
 .text-color {
@@ -129,6 +149,8 @@ header {
 .home-banner {
   padding-top: 100px 20px 20px 20px;
   height: 700px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .home-banner.contato-projetos {
@@ -143,14 +165,41 @@ header {
   justify-content: space-between; /* Espaçamento horizontal */
 }
 
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  gap: 10px; /* Espaço entre as caixas */
+}
+
 .box {
-  flex: 1 1 calc(50% - 10px); /* Ocupa 50% da largura menos o espaço do gap */
   padding: 20px;
-  background-color: #4a90e2;
-  color: white;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.box1 {
+  flex: 0 0 30%; /* Ocupa 30% da largura */
+}
+
+.box2 {
+  flex: 0 0 70%; /* Ocupa 70% da largura */
+  text-align: start;
+}
+
+.box3 {
+  width: 100%; /* Ocupa a largura total */
+  margin-top: 20px; /* Espaçamento entre o conteúdo e os botões */
+  text-align: center;
+}
+
+#botoes-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px; /* AQUI PARA MUDAR POSIÇÃO DO BOTAO EM RELAÇÃO O DE CIMA*/
 }
 
 .home-banner h2 {
@@ -190,6 +239,13 @@ header {
 
 }
 
+.botoes-final {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 200px;
+}
+
 .trabalhos-anteriores {
 
   height: 780px;
@@ -210,12 +266,17 @@ header {
 .frase-trabalhos-anteriores {
   text-align: start;
   width: 100%;
+  max-width: 1400px;
+  margin: auto;
 
 }
 
 .frase-trabalhos-destacados {
   padding-left: 20px;
   padding-bottom: 10px;
+  max-width: 1400px;
+  text-align: start;
+  margin: 0 auto;
 }
 
 .apresentacao-trabalhos-mini {
@@ -261,8 +322,9 @@ header {
 .apresentacao-trabalhos-maximo {
   display: flex;
   padding: 20px;
-
+  max-width: 1400px;
   justify-content: center;
+  margin: auto;
 }
 .frase-trabalhos-anteriores h3{
   width: 100%;
@@ -357,17 +419,43 @@ header {
 
 .apresentacao-trabalhos-abaixo {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
   width: 100%; /* Garante que a div ocupe 100% da largura disponível */
-}
-.apresentacao-trabalhos-abaixo > div {
-  width: 50%; /* Cada div ocupa 50% da largura da div pai */
-  box-sizing: border-box;
-  padding: 30px 70px 30px 70px ;
+  margin: auto;
+
 }
 
-.titulo-frase-2 {
-  padding-bottom: 20px;
+
+.apresentacao-trabalhos-abaixo.trabalhoMax {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.apresentacao-trabalhos-abaixo > div {
+  max-width: 1400px;
+  width: 100%; /* Cada div ocupa 50% da largura da div pai */
+  box-sizing: border-box;
+  padding: 30px 70px 30px 70px ;
+
+}
+
+
+
+.titulo-frase-2  {
+  flex: 0 0 35%; /* Ocupa 30% da largura */
+  text-align: start;
+  text-align: justify;
+  
+
+}
+
+.abaixo-frase-1 {    
+  text-align: start;
+  flex: 0 0 65%; /* Ocupa 30% da largura */
+
 }
 
 .alinhar-text-direita {
@@ -437,6 +525,8 @@ header {
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1400px;
+  margin: auto;
   
 }
 
@@ -621,13 +711,39 @@ hr {
   text-align: start;
 }
 
+.infos.clientes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 1400px;
+
+}
+
+.infos.clientes p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+
+
+}
+
+
 .infos {
   display: flex;
   flex-direction: column;
   text-align: start;
   width: 100%;
-  align-items: start;
+
   padding: 20px;
+  margin: auto;
+  max-width: 1400px;
 
 }
 
@@ -711,16 +827,41 @@ hr {
   padding: 20px;
 }
 /*area planos */
+.full-background {
+  background-color: #4CAF50; /* Cor de fundo */
+  width: 100vw; /* Ocupa 100% da largura da janela */
+  text-align: center; /* Alinha o conteúdo */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Padding opcional */
+  position: relative;
 
-.area-planos {
+}
+
+.largura {
+  max-width: 1400px;
+  background-color: #0056b3;
+  margin: 0 auto;
+;
+}
+
+
+.largura-areaPlanos {
+  max-width: 1400px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin: 0 auto;
   padding: 70px;
+
+}
+
+.area-planos {
+  gap: 20px;
+  padding: 70px;
   background-color: #111;
 }
+
 .cartao-plano {
   background-color: #111;
   border: 2px solid #FFF;
@@ -849,8 +990,13 @@ hr {
   overflow: hidden;
 }
 
+
+
 /* roda pe abaixo */
+
+
 .rodape {
+
   display: flex;
   justify-content: space-between;
   align-items: center;

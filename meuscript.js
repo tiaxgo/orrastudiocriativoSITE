@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /* PARA REDIRECINAMENTO DE PAGINA */
 
-function redirectTo(url) {
+function toggleButton(url) {
   // Redireciona para a URL fornecida
   window.location.href = url;
 }
