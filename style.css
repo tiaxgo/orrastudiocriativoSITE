@@ -16,7 +16,7 @@ html, body {
 
 body {
   max-width: 1600px;    /* Define a largura máxima */
-  background-color: antiquewhite;/* Outras propriedades, se necessário */
+  background-color: white;/* Outras propriedades, se necessário */
   justify-content: center;
   font-family: "Inter", serif;;
 }
