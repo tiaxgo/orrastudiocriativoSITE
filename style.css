@@ -139,6 +139,10 @@ footer {
 
 }
 
+.secao-apresentacao-perfil {
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between; /* Espaço entre os itens */
@@ -742,7 +746,7 @@ hr {
   background-color: black;
   color: white;
   transform: translateY(0%);
-  z-index: 2;
+  z-index: 1;
 }
 
 .btn-front.button-forms {
@@ -882,7 +886,7 @@ hr {
 .apresentacao-perfil-services .apresentacao-info-services {
   width: 50%;         /* 50% da largura do pai */
   box-sizing: border-box; /* Garante que padding seja incluso */
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 
@@ -930,8 +934,10 @@ hr {
 }
 
 .titulo-apresentacao {
-  width: 500px;
-  text-align: justify;
+  width: 1100px;
+  text-align: left;
+  font-size: 90px;
+  font-weight: 600;
 }
 
 
@@ -970,6 +976,7 @@ hr {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 9%;
        /* Se quiser manter formato circular */
 }
 
@@ -1003,9 +1010,10 @@ hr {
   width: 50%;         /* 50% da largura do pai */
   box-sizing: border-box; /* Garante que padding seja incluso */
   /* Caso queira padding interno em cada div */
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   align-items: start;
   text-align: justify;
+  
 }
 /*area planos */
 .full-background {
