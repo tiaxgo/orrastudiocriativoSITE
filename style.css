@@ -358,11 +358,16 @@ footer {
 }
 
 .frase-trabalhos-destacados {
-  padding-left: 20px;
   padding-bottom: 10px;
   max-width: 1400px;
   text-align: start;
   margin: 0 auto;
+}
+
+.frase-trabalhos-destacados h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #212020;
 }
 
 .apresentacao-trabalhos-mini {
@@ -408,7 +413,7 @@ footer {
 
 .apresentacao-trabalhos-maximo {
   display: flex;
-  padding: 20px;
+  padding: 20px 0 0 0;
   max-width: 1400px;
   justify-content: center;
   margin: auto;
@@ -533,24 +538,45 @@ footer {
   max-width: 1400px;
   width: 100%; /* Cada div ocupa 50% da largura da div pai */
   box-sizing: border-box;
-  padding: 30px 70px 30px 70px ;
+  padding: 20px 0px 30px 0px ;
+  
 
 }
 
 
 
 .titulo-frase-2  {
-  flex: 0 0 35%; /* Ocupa 30% da largura */
+  flex: 0 0 40%; /* Ocupa 30% da largura */
   text-align: start;
   text-align: justify;
-  
+  padding-bottom: 20px;
+  font-weight: 100;
+}
 
+.titulo-frase-2 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212020f8;
+}
+
+
+.texto-frase-2 p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #504b4bf8;
 }
 
 .abaixo-frase-1 {    
   text-align: start;
-  flex: 0 0 65%; /* Ocupa 30% da largura */
+  flex: 0 0 60%; /* Ocupa 30% da largura */
 
+}
+
+.abaixo-frase-1 h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #212020da;
 }
 
 .alinhar-text-direita {
