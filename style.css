@@ -334,11 +334,15 @@ footer {
 
 }
 
-.botoes-final {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+.button-final{
+  position: relative;
   width: 200px;
+  height: 47px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
 }
 
 .trabalhos-anteriores {
@@ -585,7 +589,7 @@ footer {
 }
 
 .alinhar-text-direita {
-  padding-top: 260px;
+  padding-top: 150px;
   text-align: right;
 }
 
@@ -756,6 +760,11 @@ hr {
   color: black;
 }
 
+.btn-front.button-final {
+  background-color: white;
+  color: black;
+}
+
 
 /* Botão de trás (branco) */
 .btn-back {
@@ -767,21 +776,17 @@ hr {
   border-radius: 25px;
 }
 
-.btn-back {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
-  transform: translateY(100%);
-  z-index: 1;
-  border-radius: 25px;
+.btn-back.button-forms {
+  border: none;
 }
 
-.button-container.button-forms {
+.btn-back.button-final{
+  border: none;
+}
+
+.button-container.button-forms, .button-container.button-final {
   background-color: white; /* aqui a cor por traz do botao branco*/
 }
-
-
-
 
 
 .button-container {
