@@ -1572,7 +1572,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     display: flex;
     justify-content: space-between; /* Espaço entre os itens */
     align-items: center; /* Alinha verticalmente */
-    max-width: 1200px;
+    max-width: 600px;
     height: 35px;
     margin: 0 auto;
     font-weight: 700;
@@ -1673,13 +1673,35 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     display: flex;
     justify-content: space-between; /* Espaço entre os itens */
     align-items: center; /* Alinha verticalmente */
-    max-width: 200px;
+    max-width: 400px;
     height: 35px;
     margin: 0 auto;
-    font-weight: 700;
+    font-weight: 500;
     
   
   }
+
+  .sobeorra {
+    font-size: 15px;
+  }
+
+  .nav-opcoes ul.nav-links li.nav-option a {
+    color: black;
+    text-decoration: none;
+    font-size: 5px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-localizacao {
+    color: black;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+
   .trabalhos-anteriores {
     background-color: rgb(34, 0, 255);
     height: 2600px;
@@ -1691,15 +1713,49 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .button-projetos {
-    width: 150px;
+    width: 110px;
+    font-size: ;
+
   }
 
   .button-forms {
-    width: 200px;
+    width: 150px;
+   
+  }
+
+  .btn {
+    font-size: 15px;
   }
 
   .mini-perfil {
     padding-left: 10px;
+    width: 400px;
+    align-items: center;
+  }
+
+  .estrelas-do-mini-perfil p {
+    color: #33333384;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 10px;
+
+}
+
+.estrelas-do-mini-perfil {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  .card-image {
+
+    position: relative;
+    margin-left: -20px;
+    width: 150px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .apresentacao-trabalhos-mini-img {
@@ -1719,16 +1775,25 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .home-banner h2 {
-    width: 91%;
-    font-size: 50px;
+    width: 300px;
+    font-size: 45px;
     font-weight: 300;
     height: 120px;
   }
   .home-banner p {
-    width: 500px;
+    width: 300px;
     font-size: 20px;
     height: 80px;
   }
+  .boas-vindas {
+    width: 360px;
+  }
+
+  .alinhar-botoes {
+    width: 350px;
+}
+
+  
 
 
 }
