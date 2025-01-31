@@ -1867,12 +1867,147 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   align-items: flex-start;
   max-width: 366px;
   margin: 0 auto;
-  gap: 5px; */
+  gap: 5px;
   box-sizing: border-box;
 }
 
 .secao-apresentacao-perfil {
   height: 700px;
+}
+
+
+.titulo-services{
+  width: 100%;
+  font-size: 40px;
+
+  text-align: left;
+}
+.texto-services {
+  padding-top: 30px;
+  width: 360px;
+  text-align: start;
+  color: #817c7c;
+}
+
+.texto-justificado {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+  width: 360px;
+}
+
+.apresentacao-services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  max-width: 366px;
+}
+
+.linha-services {
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+.titulo-apresentacao.cometario {
+  width: 366px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+
+
+.abaixo-frase-2,.titulo-frase-2,.texto-frase-2 {
+  text-align: right;
+  width: 100%;
+  
+}
+
+.titulo-frase-2 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212020f8;
+}
+
+.texto-frase-2 p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #504b4bf8;
+}
+
+.titulo-apresentacao.pacotes {
+   display: flex;
+    justify-content: center;
+    width: 100%; 
+    font-size: 20px; 
+    font-weight: 600; 
+    display: flex;
+}
+
+.alinhar-text-direita {
+  padding-top: 0px; 
+  text-align: right;
+  padding: 20px;
+  font-size: 1px;
+  width: 100%;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  max-width: 400px;
+  
+}
+
+.texto-frase-2 p  {
+  text-align: center;
+  font-size: 12px
+}
+
+.bg-color-black {
+  background-color: #111;
+  padding-top: 10px;
+
+}
+
+.largura-areaPlanos {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.area-planos {
+  gap: 20px;
+  padding: 0 0px 0px 0px;
+  background-color: #111;
+}
+
+.cartao-plano {
+  width: 100%;
+
+}
+
+.infos p {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 100%;
 }
 
 
