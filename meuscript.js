@@ -1,52 +1,67 @@
-// meuscript.js
-
 window.addEventListener('DOMContentLoaded', () => {
-    // Seleciona o elemento do logo
-    const sobeorra = document.querySelector('.sobeorra');
-
-    // Seleciona todas as opções de navegação
-    const navOptions = document.querySelectorAll('.nav-opcoes ul.nav-links li.nav-option');
-
-    // Seleciona o elemento de localização
-    const navLocalizacao = document.querySelector('.nav-localizacao');
-
-    // Função para adicionar a classe 'show' com delay
-    const animateElement = (element, delay) => {
-        setTimeout(() => {
-            element.classList.add('show');
-        }, delay);
-    };
-
-    // Inicia a animação do logo após 100ms
-    animateElement(sobeorra, 100);
-
-    // Inicia a animação das opções de navegação com delays incrementais
-    navOptions.forEach((option, index) => {
-        // Cada opção terá um delay de 200ms multiplicado pelo seu índice
-        animateElement(option, 300 + index * 200);
+  // 🚀 Função genérica para animar elementos em sequência com delay
+  const animateSequentially = (elements, baseDelay, stepDelay) => {
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add('show');
+      }, baseDelay + index * stepDelay);
     });
+  };
 
-    // Inicia a animação da localização após todas as opções terem animado
-    animateElement(navLocalizacao, 100 + navOptions.length * 100 + 100);
+  // 🏷️ Elementos que queremos animar
+  const sobeorra = document.querySelector('.sobeorra'); // Logo
+  const navOptions = document.querySelectorAll('.nav-opcoes ul.nav-links li.nav-option'); // Opções de navegação
+  const navLocalizacao = document.querySelector('.nav-localizacao'); // Localização
+
+  // 🎬 Aplica animações individuais e sequenciais
+  if (sobeorra) sobeorra.classList.add('show');
+  animateSequentially(navOptions, 300, 200);
+  setTimeout(() => navLocalizacao?.classList.add('show'), 100 + navOptions.length * 200 + 100);
+
+  // 📌 Animação baseada no scroll para elementos "slide-up" e outros efeitos
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); // Remove a observação após animação
+      }
+    });
+  }, { threshold: 0.1 });
+
+  // 🎯 Lista de classes a observar
+  const animatedClasses = ['.slide-up', '.fade-in', '.zoom-in'];
+
+  // 🔍 Adiciona ao observer
+  animatedClasses.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => observer.observe(el));
+  });
+
+  // 🔥 Animação SEQUENCIAL para os cartões de planos
+  const sectionPlanos = document.querySelector('.area-planos'); // A section onde os planos estão
+  const cartoes = document.querySelectorAll('.cartao-plano'); // Todos os cartões dentro da section
+
+  // Criando o Observer para quando a section de planos entrar na tela
+  const sectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Quando a section de planos entra na tela, inicia a animação dos cartões
+        let delay = 0;
+        cartoes.forEach((cartao, index) => {
+          setTimeout(() => {
+            cartao.classList.add('animate'); // Adiciona a classe que dispara a animação do cartão
+          }, delay + index * 1000); // Cada cartão anima com atraso de 400ms em relação ao anterior
+        });
+        observer.unobserve(entry.target); // Para de observar a section após a animação
+      }
+    });
+  }, { threshold: 0.3 }); // Ajuste para 30% da section estar visível
+
+  // Começa a observar a section de planos
+  if (sectionPlanos) {
+    sectionObserver.observe(sectionPlanos);
+  }
 });
 
-
-window.addEventListener('DOMContentLoaded', () => {
-    const slideElements = document.querySelectorAll('.slide-up');
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          observer.unobserve(entry.target); // anima só uma vez
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-  
-    slideElements.forEach(el => observer.observe(el));
-  });
 
   let flipped = false;
 
@@ -64,22 +79,4 @@ window.addEventListener('DOMContentLoaded', () => {
   
     flipped = !flipped;
   }
-  
-
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    if (!name || !email || !message) {
-        alert('Por favor, preencha todos os campos.');
-        event.preventDefault();
-    }
-});
-
-/* PARA REDIRECINAMENTO DE PAGINA */
-
-function toggleButton(url) {
-  // Redireciona para a URL fornecida
-  window.location.href = url;
-}
+ 

@@ -21,10 +21,13 @@ body {
   font-family: "Inter", serif;;
 }
 
-body.body-projetos {
+.body-projetos {
   background-color: #f5f5f5;
+  justify-content: center;
+  font-family: "Inter", serif;
   height: 2000px;
 }
+
 
 main {
   width: 100vw; /* Ocupa 100% da largura da janela */
@@ -34,10 +37,10 @@ main {
 }
 
 .main-projetos {
-  height: 3100px;
-  grid-column: auto;
+  display: flex;
+  flex-direction: column;  /* Organiza os itens em uma coluna */
+  gap: 20px;  /* Espaçamento entre os itens */
 }
-
 /* Estilização do Header */
 header {
   background-color:transparent; /* Cor de fundo do header */
@@ -47,6 +50,16 @@ header {
   width: 100vw; /* Ocupa 100% da largura da janela */
   text-align: center; /* Alinha o conteúdo */
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+}
+
+.header-projetos {
+  background-color: none;
+  padding: 25px 20px;
+  position: fixed;
+  margin: 0 auto; 
+  width: 100vw;
+  text-align: center;
+  z-index: 1000;
 }
 
 footer {
@@ -243,6 +256,162 @@ footer {
   margin: 0 auto;
 }
 
+.home-banner.home-banner-forms {
+  padding-top: 200px 20px 20px 20px;
+  height: 500px;
+  width: 1441px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 auto;
+}
+
+.home-banner.home-banner-forms h2 {
+  padding-top: 70px;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 800;
+  height: 100px;
+}
+.home-banner.home-banner-forms p {
+  padding-top: 50px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 200;
+  height: 150px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 20px;
+  max-width: 1441px;
+
+}
+
+.form-section p {
+  width: 700px;
+}
+
+/* Estilo para o placeholder */
+label {
+  padding: 15px 0 5px 0;  /* Espaçamento interno */
+  color: #333333cf;  /* Cor do texto */
+  font-family: "Inter", sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;  /* Cor do placeholder */
+  font-family: "Inter", sans-serif;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent;  /* Faz o placeholder desaparecer ao focar no campo */
+}
+
+/* Container para as preferências de contato */
+.form-group {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Título do campo "Preferências de Contato" */
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilizando os checkboxes */
+.form-group label input[type="checkbox"] {
+  margin-right: 10px; /* Deixa o checkbox mais próximo do texto */
+  cursor: pointer; /* Cursor de mãozinha ao passar por cima */
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease; /* Transição suave para animações */
+}
+
+/* Estilo do texto ao lado do checkbox */
+.form-group label {
+  display: inline-flex; /* Para alinhar checkbox e texto */
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efeito de hover no texto */
+.form-group label:hover {
+  color: #354f6b; /* Cor do texto ao passar o mouse */
+}
+
+/* Efeito de hover no checkbox */
+.form-group label input[type="checkbox"]:hover {
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho do checkbox ao passar o mouse */
+}
+
+/* Efeito de quando o checkbox está marcado */
+.form-group input[type="checkbox"]:checked {
+  background-color: #007BFF; /* Cor de fundo ao marcar o checkbox */
+  border-color: #007BFF; /* Cor da borda ao marcar */
+}
+
+/* Customizando o estilo do checkbox */
+.form-group input[type="checkbox"]:checked + label {
+  color: #007BFF; /* Muda a cor do texto ao marcar */
+}
+
+/* Adicionando um pequeno espaçamento entre os checkboxes */
+.form-group label + label {
+  margin-left: 20px;
+}
+
+/* Estilo básico do botão */
+.form-group button[type="submit"] {
+  background-color: #1a2127; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 12px 30px; /* Espaçamento interno (padding) */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha ao passar por cima */
+  transition: all 0.3s ease; /* Transição suave para efeitos */
+  font-weight: bold; /* Texto em negrito */
+  width: 100%;
+  height: 70px;
+}
+
+/* Efeito de hover no botão */
+.form-group button[type="submit"]:hover {
+  background-color: #4d545b; /* Cor de fundo ao passar o mouse */
+  
+}
+
+/* Efeito de foco no botão */
+.form-group button[type="submit"]:focus {
+  outline: none; /* Remove a borda de foco padrão */
+  box-shadow: 0 0 5px rgb(39, 40, 42); /* Adiciona um contorno azul ao focar */
+}
+
+/* Efeito de click no botão */
+.form-group button[type="submit"]:active {
+  background-color: #131e13; /* Cor de fundo ao clicar */
+  transform: scale(1); /* Normaliza o tamanho ao clicar */
+}
+
+
+
+.home-banner.home-banner-projetos{
+  height: 500px;
+  width: 1441px;
+  display: flex;
+  flex-direction: column;
+}
+
 .home-banner.contato-projetos {
   height: 300px;
 }
@@ -350,10 +519,17 @@ footer {
   width: 100%;
   padding: 40px 20px;
   text-align: center;
+
+
+}
+
+.trabalhos-anteriores.trabalhos-anteriores-forms {
+  margin-bottom: 70px;
+
 }
 
 .trabalhos-anteriores.t-a-projetos  {
-  height: 1090px;
+  height: 1400px;
   width: 100%;
   padding: 40px 20px;
   text-align: center;
@@ -384,20 +560,28 @@ footer {
   width: 100%;
 }
 
+.mini-projetos {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+
 .apresentacao-trabalhos-mini-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
     grid-gap: 20px; /* Espaçamento entre as imagens */
-
     margin: 0 auto; /* Centraliza a galeria */
     width: 1400px;
 }
 
 .apresentacao-trabalhos-mini-img-projetos.duas-colunas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 colunas iguais */
+  grid-template-columns: repeat(2, 0fr); /* 2 colunas iguais */
   grid-gap: 20px; /* Espaçamento entre as imagens */
-  max-width: 1400px; /* Limita a largura da galeria */
+  max-width: 1441px; /* Limita a largura da galeria */
+
   
 }
 
@@ -406,6 +590,16 @@ footer {
 .img-mini {
   width: 450px;
   height: 360px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
+  border-radius: 10px; /* Bordas arredondadas (opcional) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+
+.img-mini.img-mini-projetos {
+  width: 700px;
+  height: 450px; /* Altura fixa para as imagens */
   object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
   border-radius: 10px; /* Bordas arredondadas (opcional) */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -445,6 +639,17 @@ footer {
   width: 450px;
   height: 360px;
 }
+
+.gallery-item.gallery-item-projetos {
+  display: grid;
+  position: relative; /* Necessário para posicionar o overlay */
+  overflow: hidden; /* Oculta partes da imagem que excedem o contêiner */
+  cursor: pointer; /* Indica que o item é interativo */
+  width: 700px;
+  height: 450px;
+}
+
+
 /*.gallery-item:hover .img-mini {
   transform: scale(1.1);  Zoom na imagem ao passar o mouse 
 }
@@ -456,6 +661,23 @@ footer {
   left: 0;
   width: 450px;
   height: 360px;
+  background: rgba(0, 0, 0, 0.735); /* Camada semi-transparente */
+  opacity: 0; /* Invisível inicialmente */
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.overlay.overlay-projetos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 450px;
   background: rgba(0, 0, 0, 0.735); /* Camada semi-transparente */
   opacity: 0; /* Invisível inicialmente */
   transition: opacity 0.3s ease;
@@ -643,6 +865,15 @@ footer {
   width: 100%;
 }
 
+.linha-forms {
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+
+}
+
 .linha-services hr {
   border: 0;
   height: 1px;
@@ -680,15 +911,63 @@ hr {
 }
 
 
-.slide-up {
-  opacity: 0; /* estado inicial invisível */
-  /* Podemos deixar sem transform aqui; pois a keyframe inicial define transform: translateY(50px) */
+/* Estado inicial invisível */
+.slide-up, .fade-in, .zoom-in {
+  opacity: 0;
 }
 
+/* Configuração da animação */
 .slide-up.animate {
   animation: slideUp 1.2s ease-out forwards;
-  animation-delay:0.5s; /* 300ms de espera antes de animar */
+  animation-delay: 0.5s;
 }
+
+.fade-in.animate {
+  animation: fadeIn 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.zoom-in.animate {
+  animation: zoomIn 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* 🌟 Estilos base */
+.cartao-plano {
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(50px); /* Inicialmente deslocado para baixo */
+  transition: opacity 1s, transform 1s;
+}
+
+.cartao-plano.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Sequência de animações com delay para cada cartão */
+.cartao-plano:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.cartao-plano:nth-child(2) {
+  animation-delay: 2s; /* Meio segundo de atraso para o próximo */
+}
+
+.cartao-plano:nth-child(3) {
+  animation-delay: 3s; /* E assim por diante */
+}
+
+.cartao-plano:nth-child(4) {
+  animation-delay: 5s;
+}
+
+.cartao-plano:nth-child(5) {
+  animation-delay: 7s;
+}
+
+/* Adicione mais `nth-child` se houver mais cartões */
+
 
 /* Keyframes do vir debaixo */
 @keyframes slideUp {
@@ -1059,16 +1338,7 @@ hr {
   text-align: justify;
   
 }
-/*area planos */
-.full-background {
-  background-color: #4CAF50; /* Cor de fundo */
-  width: 100vw; /* Ocupa 100% da largura da janela */
-  text-align: center; /* Alinha o conteúdo */
-  color: white; /* Cor do texto */
-  padding: 20px; /* Padding opcional */
-  position: relative;
 
-}
 
 .largura {
   padding-top: 90px;
@@ -1289,6 +1559,10 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 1441px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 /* Responsividade para dispositivos móveis */
