@@ -2012,21 +2012,41 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 .home-banner.home-contato-projetos {
   margin: 0;
-  width: 200px;
+  width: 380px;
  }
 
-.home-contato-projetos h2 {
-  width: 300px;
- }
+ .home-contato-projetos h2 {
+  width: 199px;
+  height: 200px;
+  font-size: 24px;
+}
 
  .flex-container {
   display: flex;
-  width: 600px;
-  justify-content: left;  /* Espaçamento entre os elementos */
-  gap: 10px; /* Espaço entre as caixas */
+  width: 360px;
+  justify-content: left;  /* Espaçamento entre os elementos */ 
 }
 
+.box2 {
+  flex: 0 30% 0; /* Ocupa 70% da largura */
+  text-align: start;
+  font-size: 10px;
+}
 
+h2.box.box2 {
+  width: 200px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: left;
+  color: #212020f8;
+}
+
+#botoes-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
 
 
 }
