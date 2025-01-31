@@ -1704,9 +1704,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
   .trabalhos-anteriores {
     background-color: rgb(34, 0, 255);
-    height: 2600px;
+    height: 1620px;
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 5px;
     text-align: center;
   
     
@@ -1714,7 +1714,6 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
   .button-projetos {
     width: 110px;
-    font-size: ;
 
   }
 
@@ -1739,12 +1738,12 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     font-weight: 500;
     font-size: 10px;
 
-}
+  }
 
-.estrelas-do-mini-perfil {
+  .estrelas-do-mini-perfil {
   padding-left: 20px;
   padding-right: 20px;
-}
+  }
 
   .card-image {
 
@@ -1758,14 +1757,53 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  .frase-trabalhos-anteriores h3 {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+
+  }
+
   .apresentacao-trabalhos-mini-img {
     display: flex;
     flex-direction: column;
+    width: 382px;
+    grid-gap: 7px; 
+
   }
-  .apresentacao-trabalhos-mini {
-    width: 600px;
+    .apresentacao-trabalhos-mini {
+    width: 382px;
     height: 2000px;
+    
   }
+
+  .gallery-item {
+    display: grid;
+    position: relative; /* Necessário para posicionar o overlay */
+    overflow: hidden; /* Oculta partes da imagem que excedem o contêiner */
+    cursor: pointer; /* Indica que o item é interativo */
+    width: 382px;
+    height: 250px;
+  }
+  .img-mini {
+    height: 250px;
+    width: 380px;
+  }
+
+  .overlay {
+    height: 250px;
+    width: 380px;
+ 
+  }
+
+  /* Estilização das Frases no Overlay */
+  .overlay .frase-esquerda,
+  .overlay .frase-direita {
+      font-size: 12px;
+  }
+
+
 
   .home-banner {
     height: 400px;
@@ -1793,7 +1831,49 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     width: 350px;
 }
 
-  
+.titulo-apresentacao {
+  width: 366px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.trabalhos-destacados {
+  display: none;
+}
+
+.apresentacao-perfil .conteiner-perfil, .apresentacao-perfil .apresentacao-info {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+  align-items: start;
+  text-align: justify;
+}
+
+.apresentacao-info p {
+  font-size: 14px;
+  color: #d4d4d4c2;
+  text-align: center;
+}
+.apresentacao-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.apresentacao-perfil {
+  display: flex;
+  align-items: flex-start;
+  max-width: 366px;
+  margin: 0 auto;
+  gap: 5px; */
+  box-sizing: border-box;
+}
+
+.secao-apresentacao-perfil {
+  height: 700px;
+}
 
 
 }
