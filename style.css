@@ -2010,5 +2010,23 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   width: 100%;
 }
 
+.home-banner.home-contato-projetos {
+  margin: 0;
+  width: 200px;
+ }
+
+.home-contato-projetos h2 {
+  width: 300px;
+ }
+
+ .flex-container {
+  display: flex;
+  width: 600px;
+  justify-content: left;  /* Espaçamento entre os elementos */
+  gap: 10px; /* Espaço entre as caixas */
+}
+
+
+
 
 }
