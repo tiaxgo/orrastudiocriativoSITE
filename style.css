@@ -1569,8 +1569,15 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 @media (max-width: 1200px) {
   /* Mantém o layout em linha mesmo em telas menores */
   .navbar {
-      flex-direction: row;
-      align-items: center;
+    display: flex;
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha verticalmente */
+    max-width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+    font-weight: 700;
+    
+  
   }
 
   .nav-opcoes ul.nav-links {
@@ -1662,6 +1669,17 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 
 @media (max-width: 1000px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha verticalmente */
+    max-width: 200px;
+    height: 35px;
+    margin: 0 auto;
+    font-weight: 700;
+    
+  
+  }
   .trabalhos-anteriores {
     background-color: rgb(34, 0, 255);
     height: 2600px;
