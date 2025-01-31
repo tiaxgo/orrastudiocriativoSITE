@@ -248,7 +248,7 @@ footer {
 }
 
 .home-banner {
-  padding-top: 100px 20px 20px 20px;
+  padding: 120px 20px 20px 10px;
   height: 700px;
   width: 1441px;
   display: flex;
@@ -1586,14 +1586,27 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .home-banner {
-    height: 920px;
+    height: 550px;
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 10px;
   }
 
-  .alinhar-botoes {
+  .home-banner p {
+    width: 500px;
+    font-size: 20px;
+    height: 80px;
+  }
+
+  .button-projetos {
+    width: 150px;
+  }
+
+  .button-forms {
     width: 200px;
+  }
+  .alinhar-botoes {
+    width: 700px;
   }
 
   .botoes {
@@ -1632,6 +1645,18 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 .titulo-frase-2 {
   padding-bottom: 10px;
 }
+.mini-perfil {
+  padding-left: 10px;
+}
+
+.apresentacao-trabalhos-mini-img {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  /* grid-gap: 20px; */
+  margin: 0 auto;
+  width: 600px;
+}
+
 
 }
 
@@ -1645,6 +1670,46 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     text-align: center;
   
     
+  }
+
+  .button-projetos {
+    width: 150px;
+  }
+
+  .button-forms {
+    width: 200px;
+  }
+
+  .mini-perfil {
+    padding-left: 10px;
+  }
+
+  .apresentacao-trabalhos-mini-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .apresentacao-trabalhos-mini {
+    width: 600px;
+    height: 2000px;
+  }
+
+  .home-banner {
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .home-banner h2 {
+    width: 91%;
+    font-size: 50px;
+    font-weight: 300;
+    height: 120px;
+  }
+  .home-banner p {
+    width: 500px;
+    font-size: 20px;
+    height: 80px;
   }
 
 
