@@ -1847,7 +1847,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
       font-size: 12px;
   }
 
-
+  .secao-apresentacao {
+    width: 441px;
+  }
 
   section.home-banner {
     height: 400px;
