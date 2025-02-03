@@ -813,7 +813,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 27px;
   font-weight: 500;
   color: #202020da;
-  width: 380px;
+  width: 200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1848,7 +1848,11 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .secao-apresentacao {
-    width: 441px;
+    width: 200px;
+  }
+
+  header {
+    width: 395px;
   }
 
   section.home-banner {
