@@ -1805,8 +1805,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 
 
-  .home-banner {
+  section.home-banner {
     height: 400px;
+    width: 440px;
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 10px;
