@@ -1847,9 +1847,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
       font-size: 12px;
   }
 
-  .secao-apresentacao {
-    width: 200px;
-  }
+  
 
   header {
     width: 395px;
@@ -1994,7 +1992,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   font-weight: 500;
   color: #212020f8;
   margin: auto;
-  max-width: 366px;
+  width: 200px;
   text-align: center;
 }
 
