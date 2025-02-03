@@ -1755,6 +1755,17 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   padding-right: 20px;
   }
 
+  .linha-bemvindo {
+    background-color: transparent;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1441px;
+    margin: auto;
+    width: 430px;
+  }
+  
+
   .card-image {
 
     position: relative;
