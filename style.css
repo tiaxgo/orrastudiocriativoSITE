@@ -1682,6 +1682,18 @@ body {
   margin: 0 auto;
 }
 
+main {
+
+    padding-top: 60px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    max-width: 4402px;
+    margin: 0 auto;
+
+}
+
   .navbar {
     display: flex;
     justify-content: space-between; /* Espaço entre os itens */
