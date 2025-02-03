@@ -1676,7 +1676,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   body {
     max-width: 420px;
     margin: 0 auto;
