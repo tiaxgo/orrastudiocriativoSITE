@@ -809,6 +809,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 500;
   color: #202020da;
 }
+.abaixo-frase-1 h4 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #202020da;
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .alinhar-text-direita {
   padding-top: 150px;
@@ -1705,9 +1713,10 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   .trabalhos-anteriores {
     background-color: rgb(34, 0, 255);
     height: 1620px;
-    width: 100%;
+    width: 441px;
     padding: 40px 5px;
     text-align: center;
+    margin: 0 auto;
   
     
   }
@@ -1727,8 +1736,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .mini-perfil {
-    padding-left: 10px;
-    width: 400px;
+    padding-left: 0px;
+    padding-right: 29px;
+    width: 420px;
     align-items: center;
   }
 
@@ -1807,10 +1817,11 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
   section.home-banner {
     height: 400px;
-    width: 440px;
+    width: 441px;
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 10px;
+
   }
 
   .home-banner h2 {
@@ -1878,16 +1889,19 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 
 .titulo-services{
-  width: 100%;
+  width: 340px;
   font-size: 40px;
-
+  margin: 0 auto;
   text-align: left;
+
 }
 .texto-services {
   padding-top: 30px;
-  width: 360px;
+  width: 340px;
   text-align: start;
   color: #817c7c;
+  margin: 0 auto;
+
 }
 
 .texto-justificado {
@@ -1935,11 +1949,23 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   color: #212020f8;
 }
 
+.titulo-frase-2 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212020f8;
+  margin: auto;
+  max-width: 366px;
+  text-align: center;
+}
+
+
+
 .texto-frase-2 p {
   font-size: 17px;
   font-weight: 600;
   line-height: 1.5;
   color: #504b4bf8;
+
 }
 
 .titulo-apresentacao.pacotes {
@@ -1965,7 +1991,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   text-align: start;
   width: 100%;
   padding: 20px;
-  margin: 0;
+  margin: 0 auto;
   max-width: 400px;
   
 }
