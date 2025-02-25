@@ -1613,6 +1613,13 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     height: 80px;
   }
 
+  .home-banner h2 {
+    width: 70%;
+    font-size: 90px;
+    font-weight: 300;
+    height: 250px;
+}
+
   .button-projetos {
     width: 150px;
   }
@@ -1634,7 +1641,31 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 }
 
 .img-mini {
-    height: 400px;
+  width: 380px;
+  height: 300px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
+  border-radius: 10px; /* Bordas arredondadas (opcional) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.gallery-item {
+  display: grid;
+  position: relative; /* Necessário para posicionar o overlay */
+  overflow: hidden; /* Oculta partes da imagem que excedem o contêiner */
+  cursor: pointer; /* Indica que o item é interativo */
+  width: 380px;
+  height: 300px;
+}
+
+.overlay {
+  width: 380px;
+  height: 300px;
+
+}
+
+.img-mini {
+    height: 300px;
 }
 
 .img-max {
@@ -1643,10 +1674,10 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 }
 
 .trabalhos-anteriores {
-  background-color: red;
-  height: 2600px;
+
+  height: 1050px;
   width: 100%;
-  padding: 40px 20px;
+  padding: 40px 27px;
   text-align: center;
 
   
@@ -1661,7 +1692,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   padding-bottom: 10px;
 }
 .mini-perfil {
-  padding-left: 10px;
+  padding-left: 18px;
 }
 
 .apresentacao-trabalhos-mini-img {
