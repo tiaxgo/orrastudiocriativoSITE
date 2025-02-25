@@ -1703,6 +1703,67 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   width: 600px;
 }
 
+.titulo-apresentacao {
+  width: 800px;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.texto-apresentacao {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.p1 {
+  font-size: 17px;             /* Tamanho de fonte (ajuste se quiser maior/menor) */
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.p2 {
+  font-size: 20px;  
+  font-weight: 500;           /* Tamanho de fonte (ajuste se quiser maior/menor) */
+  color: white;
+  width: 419px;
+}
+
+.titulo-apresentacao.cometario {
+  width: 800px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container-planos {
+  display: flex;
+  justify-content: space-between; /* Divide em dois lados */
+  align-items: center;
+  flex-wrap: wrap; /* Quebra para telas pequenas */
+  width: 100%;
+  max-width: 800px; /* Define um limite de largura */
+  margin: auto; /* Centraliza na página */
+  padding: 50px;
+}
+
+/* Estilizando a primeira div (lado esquerdo) */
+.projeto-info {
+  flex: 1; /* Ocupa o espaço disponível */
+  min-width: 200px; /* Define um tamanho mínimo */
+  text-align: left;
+  padding-left: 100px;
+}
+
+/* Estilizando a segunda div (lado direito) */
+.fundador-info {
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+  padding-right: 100px;
+}
+
+
 
 }
 
