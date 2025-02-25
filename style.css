@@ -1368,7 +1368,12 @@ hr {
 
 }
 
+section.apresentacao-trabalhos-abaixo.text-color.bg-color-black {
+  display: none;
+}
+
 .area-planos {
+  display: none;
   gap: 20px;
   padding: 0 70px 70px 70px;
   background-color: #111;
@@ -1627,6 +1632,13 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
       margin-left: 20px; /* Adiciona espaçamento à esquerda da localização */
   }
 
+  .home-banner.home-contato-projetos { /* aqui é p home banner debaixo*/
+    height: 450px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
   .home-banner {
     height: 550px;
     padding-top: 100px;
@@ -1654,9 +1666,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   .button-forms {
     width: 200px;
   }
-  .alinhar-botoes {
-    width: 700px;
-  }
+
 
   .botoes {
     width: 100%;
@@ -1790,6 +1800,26 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   padding-right: 100px;
 }
 
+.apresentacao-services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.texto-justificado {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+  width: 800px;
+}
+
+.titulo-services {
+  font-size: 100px;
+  width: 90%;
+  text-align: left;
+}
 
 
 }
@@ -2247,8 +2277,20 @@ h2.box.box2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 0px;
+  margin-left: 17px;
 }
+
+
+/* Estilizando a primeira div (lado esquerdo) */
+.projeto-info {
+  padding-left: 10px;
+}
+
+/* Estilizando a segunda div (lado direito) */
+.fundador-info {
+  padding-right: 10px;
+}
+
 
 
 }
