@@ -2015,6 +2015,8 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 .secao-apresentacao-perfil {
   height: 700px;
+  z-index: 9999;
+  width: 125%;
 }
 
 .p1 {
@@ -2183,6 +2185,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 .home-banner.home-contato-projetos {
   margin: 0;
   width: 380px;
+  height: 300px;
+  padding: 0;
+
  }
 
  .home-contato-projetos h2 {
@@ -2194,6 +2199,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
  .flex-container {
   display: flex;
   width: 360px;
+  height: 100px;
   justify-content: left;  /* Espaçamento entre os elementos */ 
 }
 
