@@ -1725,7 +1725,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 
 
   .trabalhos-anteriores {
-    background-color: rgb(34, 0, 255);
+    background-color: #fff;
     height: 1620px;
     width: 391px;
     padding: 40px 5px;
@@ -1854,9 +1854,9 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   section.home-banner {
-    height: 400px;
+    height: 310px;
     width: 390px;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 10px;
 
