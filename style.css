@@ -64,7 +64,7 @@ header {
 
 footer {
   margin: 0 auto; 
-  width: 100%; /* Ocupa 100% da largura da janela */
+  width: 120vh; /* Ocupa 100% da largura da janela */
   text-align: center; /* Alinha o conteúdo */
   z-index: 9999; /* Garantir que o header fique acima de outros elementos */
 
@@ -1547,6 +1547,7 @@ section.apresentacao-trabalhos-abaixo.text-color.bg-color-black {
   padding: 20px;
   background-color: #111;
   color: #fff;
+  margin: 0 auto;
 }
 
 .rodape ul {
