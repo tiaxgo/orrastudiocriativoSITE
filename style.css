@@ -16,6 +16,7 @@ html, body {
 
 body {
   max-width: 1600px;    /* Define a largura máxima */
+  min-width: 1600px;
   background-color: white;/* Outras propriedades, se necessário */
   justify-content: center;
   font-family: "Inter", serif;;
@@ -64,7 +65,7 @@ header {
 
 footer {
   margin: 0 auto; 
-  width: 120vh; /* Ocupa 100% da largura da janela */
+  width: 100vw; /* Ocupa 100% da largura da janela */
   text-align: center; /* Alinha o conteúdo */
   z-index: 9999; /* Garantir que o header fique acima de outros elementos */
 
@@ -1609,6 +1610,11 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 /* Responsividade para dispositivos móveis */
 @media (max-width: 1200px) {
   /* Mantém o layout em linha mesmo em telas menores */
+  body {
+    max-width: 1200px;
+    min-width: 1000px;
+
+  }
 
   main {
     display: flex; /* Ou display: grid */
@@ -1617,6 +1623,10 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     max-width: 1100px; /* Define um limite */
     margin: 0 auto; /* Centraliza na tela */
     overflow: hidden; /* Impede que elementos vazem */
+  }
+
+  footer {
+    width: 100vw;
   }
 
   .navbar {
@@ -1728,7 +1738,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   height: 1050px;
   padding: 40px 27px;
   text-align: center;
-  width: 76vh;
+  width: 61vh;
   margin: 0 auto;
 
   
@@ -1886,6 +1896,10 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     justify-content: center;
     max-width: 430px;
     margin: 0 auto;
+  }
+
+  footer {
+    width: 100vw;
   }
 
   .navbar {
