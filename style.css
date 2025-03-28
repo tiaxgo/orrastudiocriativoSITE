@@ -2363,14 +2363,24 @@ h2.box.box2 {
 .home-banner.home-banner-forms {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 300px;
   width: 400px;
-  padding-top: 0px;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-top: 0px !important;
+  padding-left: 5px;
+  padding-right: 5px;
 
 
 }
+
+.home-banner.home-banner-forms h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 800;
+  height: 200px;
+}
+
 
 .duas-colunas-contato {
   display: flex;
@@ -2379,6 +2389,12 @@ h2.box.box2 {
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 50px;
+}
+
+.paragrafo-animado.paragrafo-forms {
+  width: 370px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 
