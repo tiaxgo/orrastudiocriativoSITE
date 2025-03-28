@@ -570,7 +570,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .apresentacao-trabalhos-mini {
-  width: 100vw;
+  width: 98vw;
 }
 
 .mini-projetos {
@@ -584,9 +584,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 .apresentacao-trabalhos-mini-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
-    grid-gap: 20px; /* Espaçamento entre as imagens */
+    grid-gap: 22px; /* Espaçamento entre as imagens */
     margin: 0 auto; /* Centraliza a galeria */
-    width: 1400px;
+    width: 1410px;
 }
 
 .apresentacao-trabalhos-mini-img-projetos.duas-colunas {
@@ -1708,10 +1708,8 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
     width: 100%;
   }
 
-  .apresentacao-trabalhos-mini {
-    width: 200px;
-    height: 200px;
-}
+  /*.apresentacao-trabalhos-mini {
+  }*/
 
 .img-mini {
   width: 380px;
@@ -1751,7 +1749,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   height: 1050px;
   padding: 40px 27px;
   text-align: center;
-  width: 70vw;
+  width: 100vw;
   margin: 0 auto;
 
   
