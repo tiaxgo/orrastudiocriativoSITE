@@ -102,6 +102,8 @@ footer {
 
 }
 
+
+
 .card-image:first-child {
   margin-left: 0; /* Remove o deslocamento da primeira imagem */
 }
@@ -524,7 +526,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .trabalhos-anteriores {
   height: 850px;
-  width: 100%;
+  width: 100vw;
   padding: 40px 20px;
   text-align: center;
 
@@ -533,6 +535,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .trabalhos-anteriores.trabalhos-anteriores-forms {
   margin-bottom: 70px;
+  width: 100vw;
+  padding-top: 0px;
+  margin-bottom: 0px;
 
 }
 
@@ -565,7 +570,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .apresentacao-trabalhos-mini {
-  width: 100%;
+  width: 100vw;
 }
 
 .mini-projetos {
@@ -1633,7 +1638,8 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   footer {
-    width: 100vw;
+    width: 100%;
+    margin: none;
   }
 
   .navbar {
@@ -1745,7 +1751,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   height: 1050px;
   padding: 40px 27px;
   text-align: center;
-  width: 61vh;
+  width: 70vw;
   margin: 0 auto;
 
   
@@ -1906,7 +1912,8 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   footer {
-    width: 100vw;
+    width: 100%;
+    margin: none;
   }
 
   .navbar {
