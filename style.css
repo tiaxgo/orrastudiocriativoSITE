@@ -15,8 +15,7 @@ html, body {
 }
 
 body {
-  max-width: 1600px;    /* Define a largura máxima */
-  min-width: 1600px;
+ 
   background-color: white;/* Outras propriedades, se necessário */
   justify-content: center;
   font-family: "Inter", serif;;
@@ -27,6 +26,8 @@ body {
   justify-content: center;
   font-family: "Inter", serif;
   height: 2000px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  
 }
 
 .body-forms {
@@ -45,6 +46,7 @@ main {
 }
 
 .main-projetos {
+  width: 100%;
   display: flex;
   flex-direction: column;  /* Organiza os itens em uma coluna */
   gap: 20px;  /* Espaçamento entre os itens */
@@ -525,9 +527,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .trabalhos-anteriores {
   height: 850px;
-  width: 100vw;
+  width: 100%;
   padding: 40px 20px;
   text-align: center;
+  margin: 0 auto;
 
 
 }
@@ -577,7 +580,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .apresentacao-trabalhos-mini {
-  width: 98vw;
+  width: 100%;
 }
 
 .mini-projetos {
@@ -646,7 +649,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .apresentacao-trabalhos-maximo-exemple{
   width: 1400px;
-  margin: 0px 388px;
+  margin: 0 auto;
 }
 
 .frase-trabalhos-anteriores h3{
@@ -1930,6 +1933,11 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 .trabalhos-anteriores.t-a-projetos-escolha {
   height: 1200px ;
   width: 104vw;
+}
+
+.apresentacao-trabalhos-maximo-exemple {
+  width: 798px;
+  /* margin: 0px 388px; */
 }
 
 }
