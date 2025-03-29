@@ -2106,12 +2106,12 @@ width: 800px;
   .apresentacao-trabalhos-mini-img {
     display: flex;
     flex-direction: column;
-    width: 382px;
+    width: 380px;
     grid-gap: 7px; 
 
   }
     .apresentacao-trabalhos-mini {
-    width: 382px;
+    width: 380px;
     height: 2000px;
     
   }
