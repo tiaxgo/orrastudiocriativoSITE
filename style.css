@@ -2491,8 +2491,9 @@ h2.box.box2 {
 
 .apresentacao-trabalhos-maximo-exemple {
   width: 380px;
-  height: 422px;
-  /* margin: 0px 388px; */
+  height: 261px;
+  padding: 1px !important; /* margin: 0px 388px; */
+  gap: 1px !important;
 }
 
 
@@ -2522,5 +2523,17 @@ h2.box.box2 {
   padding-bottom: 1px;
 }
 
+.abaixo-frase-1-exemple h3 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #202020da;
+  text-align: center;
+}
+
+.img-max {
+
+  height: 260px;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
+}
 
 }
