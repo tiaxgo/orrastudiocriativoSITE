@@ -1659,6 +1659,13 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   margin-top: 50px;
 }
 
+.frase-exemple h3     {
+  font-size: 67px;
+font-weight: 700;
+color: #202020da;
+width: 800px;
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 1200px) {
   /* Mantém o layout em linha mesmo em telas menores */
