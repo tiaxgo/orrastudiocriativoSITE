@@ -60,6 +60,7 @@ header {
   width: 100%; /* Ocupa 100% da largura da janela */
   text-align: center; /* Alinha o conteúdo */
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+  height: 50px;
 }
 
 .header-projetos {
@@ -172,7 +173,7 @@ footer {
   justify-content: space-between; /* Espaço entre os itens */
   align-items: center; /* Alinha verticalmente */
   max-width: 1400px;
-  height: 35px;
+  height: 50px;
   margin: 0 auto;
   font-weight: 700;
   
@@ -186,6 +187,7 @@ footer {
 }
 
 .sobeorra {
+  height: 200px;
   font-size: 23px;
   color: black;
   opacity: 0;
@@ -1693,7 +1695,7 @@ width: 800px;
     display: flex;
     justify-content: space-between; /* Espaço entre os itens */
     align-items: center; /* Alinha verticalmente */
-    max-width: 600px;
+    max-width: 800px;
     height: 35px;
     margin: 0 auto;
     font-weight: 700;
