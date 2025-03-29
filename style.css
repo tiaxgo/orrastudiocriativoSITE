@@ -1707,7 +1707,7 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   }
 
   .home-banner.home-contato-projetos { /* aqui é p home banner debaixo*/
-    height: 450px;
+    height: 530px;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 10px;
@@ -1939,6 +1939,16 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
   width: 798px;
   /* margin: 0px 388px; */
 }
+
+.box3-exemple {
+  margin-top: 130px;
+}
+
+.home-banner.home-banner-projetos{
+  width: 820px;
+
+}
+
 
 }
 
