@@ -689,6 +689,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   justify-content: center;
   padding: 20px;
   border-radius: 10px;
+  z-index: 1; /* Garante que o overlay fique acima da imagem */
   
 }
 
@@ -1580,6 +1581,14 @@ section.apresentacao-trabalhos-abaixo.text-color.bg-color-black {
   color: #fff;
   text-decoration: none;
 }
+
+
+a {
+  position: relative;
+  z-index: 2;  /* Certifique-se de que o link fica acima da sobreposição */
+}
+
+
 /*  form abaixo */
 
 Users/pablo/Documents/orrastudiocriativoSITE/style.css */
