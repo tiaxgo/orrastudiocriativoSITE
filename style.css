@@ -2496,4 +2496,31 @@ h2.box.box2 {
 }
 
 
+.titulo-frase-2-exemple {
+  font-size: 15px;
+  font-weight: 300;
+  color: #212020f8;
+  text-align: center;
+
+}
+.frase-exemple h3{
+  font-size: 20px;
+  font-weight: 700;
+  width: 260px;
+}
+
+.largura-areaPlanos-exemple {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px ;
+  padding-bottom: 2px;
+}
+
+.apresentacao-trabalhos-abaixo-exemple {
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+
 }
