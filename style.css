@@ -55,7 +55,7 @@ header {
   padding: 25px 20px; /* Espaçamento interno */
   position: fixed; /* Fixar o header no topo */
   margin: 0 auto; 
-  width: 100vw; /* Ocupa 100% da largura da janela */
+  width: 100%; /* Ocupa 100% da largura da janela */
   text-align: center; /* Alinha o conteúdo */
   z-index: 1000; /* Garantir que o header fique acima de outros elementos */
 }
@@ -65,7 +65,6 @@ header {
   padding: 25px 20px;
   position: fixed;
   margin: 0 auto; 
-  width: 100vw;
   text-align: center;
   z-index: 1000;
 }
@@ -1896,6 +1895,11 @@ Users/pablo/Documents/orrastudiocriativoSITE/style.css */
 .home-banner.home-banner-forms p {
   height: 100px;
   padding-left: 20px;
+}
+
+.trabalhos-anteriores.t-a-projetos-escolha {
+  height: 1200px ;
+  width: 104vw;
 }
 
 }
