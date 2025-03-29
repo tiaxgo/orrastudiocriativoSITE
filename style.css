@@ -635,6 +635,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 }
 
+.apresentacao-trabalhos-maximo-exemple,
 .apresentacao-trabalhos-maximo {
   display: flex;
   padding: 20px 0 0 0;
@@ -642,6 +643,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   justify-content: center;
   margin: auto;
 }
+
+.apresentacao-trabalhos-maximo-exemple{
+  width: 1400px;
+  margin: 0px 388px;
+}
+
 .frase-trabalhos-anteriores h3{
   width: 100%;
   padding-bottom: 30px;
@@ -769,7 +776,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 
 
-
+.apresentacao-trabalhos-abaixo-exemple,
 .apresentacao-trabalhos-abaixo {
   display: flex;
   flex-direction: row;
@@ -778,7 +785,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 }
 
-
+.apresentacao-trabalhos-abaixo-exemple,
 .apresentacao-trabalhos-abaixo.trabalhoMax {
   max-width: 1400px;
   display: flex;
@@ -786,6 +793,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 }
 
+
+section.apresentacao-trabalhos-abaixo.text-color.bg-color-black {
+  display: none;
+}
+
+.apresentacao-trabalhos-abaixo-exemple,
 .apresentacao-trabalhos-abaixo > div {
   max-width: 1400px;
   width: 100%; /* Cada div ocupa 50% da largura da div pai */
@@ -793,6 +806,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 20px 0px 30px 0px ;
   
 
+}
+
+.apresentacao-trabalhos-abaixo-exemple {
+  padding-top: 100px;
 }
 
 
@@ -1377,7 +1394,11 @@ hr {
 ;
 }
 
+.largura-areaPlanos-exemple{
+  
+}
 
+.largura-areaPlanos-exemple,
 .largura-areaPlanos {
   max-width: 1400px;
   width: 100%;
@@ -2442,5 +2463,12 @@ h2.box.box2 {
   height: 100px;
   margin-top: 72px !important;
 }
+
+.apresentacao-trabalhos-maximo-exemple {
+  width: 380px;
+  height: 422px;
+  /* margin: 0px 388px; */
+}
+
 
 }
