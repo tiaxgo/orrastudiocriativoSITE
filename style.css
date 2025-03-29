@@ -1739,7 +1739,7 @@ width: 800px;
     width: 70%;
     font-size: 90px;
     font-weight: 300;
-    height: 250px;
+    height: 150px;
 }
 
   .button-projetos {
@@ -1948,12 +1948,12 @@ width: 800px;
 }
 
 .box3-exemple {
-  margin-top: 130px;
+  margin-top: 230px;
 }
 
 .home-banner.home-banner-projetos{
   width: 820px;
-
+  height: 400px;
 }
 
 
