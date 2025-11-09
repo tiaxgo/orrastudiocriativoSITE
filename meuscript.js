@@ -79,4 +79,48 @@ window.addEventListener('DOMContentLoaded', () => {
   
     flipped = !flipped;
   }
+
+  // ============================================
+  // MOBILE MENU FUNCTIONALITY
+  // ============================================
+  
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+  const body = document.body;
+
+  // Toggle menu function
+  function toggleMobileMenu() {
+    mobileMenuToggle.classList.toggle('active');
+    mobileMenuOverlay.classList.toggle('active');
+    body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+  }
+
+  // Open/close menu when hamburger is clicked
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Close menu when a link is clicked
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMobileMenu();
+    });
+  });
+
+  // Close menu when clicking outside (on overlay)
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileMenuOverlay) {
+        toggleMobileMenu();
+      }
+    });
+  }
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+      toggleMobileMenu();
+    }
+  });
  
